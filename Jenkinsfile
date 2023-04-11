@@ -17,5 +17,13 @@ pipeline {
                 echo 'Deploying something..'
             }
         }
+		
+		 stage('test data pipeline') {
+                when {changeset "data_pipeline/*.*" }
+
+                steps {
+                    echo 'Testing data pipeline..'
+                }
+            }
     }
 }
