@@ -10,7 +10,7 @@ my_logger = logger.get_logger()
 
 
 def main():
-    my_logger.info("Cleaning up...")
+    my_logger.info("Cleaning up.....")
 
 
 if __name__ == "__main__":
